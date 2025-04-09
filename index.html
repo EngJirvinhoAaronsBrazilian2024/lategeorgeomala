@@ -1,0 +1,89 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Late George Omala Otieno.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wives.html">Wives</a></li>
+            <li><a href="sons.html">Sons</a></li>
+            <li><a href="daughters.html">Daughters</a></li>
+            <li><a href="grandchildren.html">Grandchildren</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Late George Omala Otieno.</h1>
+        <div class="container">
+            <img src="ge.png" alt="Description of the image" width="300" height="200">
+        </div>
+        <div class="section">
+            <h2>Personal Information</h2>
+            <p><strong>Name:</strong> George Omala Otieno.</p>
+            <p><strong>Place of Birth:</strong> Amukura Mission  Hospital Busia.</p>
+            <p><strong>Date of Birth:</strong> 15/02/1968.</p>
+            <p><strong>Parents:</strong>Late Grace Namenge and Late Mzee Josiah Omala</p>
+            <p><strong>Married Wives:</strong> 5</p>
+            <p><strong>Children:</strong> 5</p>
+            <p><strong>Grand Children:</strong> 4</p>
+        </div>
+
+        <div class="section">
+            <h2>Education Background</h2>
+            <p>George started his school at Malaba Township Primary std 1 in the year 1980 to std 8 in 1987.</p>
+            <p>He joined St. Paul High School Amakura in 1988 and completed his form 4 in 1991 after K.C.S.E.</p>
+        </div>
+
+        <div class="section">
+            <h2>Work Background</h2>
+            <p>In 1992 he did different types of business including clearing and forwarding upto 2015 when he decided to stick to his small businesses.</p>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Share Your Tribute</h1>
+        
+        <div class="tribute-form">
+            <form id="tributeForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="relationship">Your Relationship:</label>
+                    <select id="relationship" name="relationship" required>
+                        <option value="">Select Relationship</option>
+                        <option value="family">Family</option>
+                        <option value="friend">Friend</option>
+                        <option value="colleague">Colleague</option>
+                        <option value="community">Community Member</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Tribute Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email (optional):</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <button type="submit" class="submit-btn">Send Tribute</button>
+            </form>
+
+            <div id="successMessage" class="success-message"></div>
+            <div id="errorMessage" class="error-message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+/* General Styles */
+.container {
+    text-align: center;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light Blue */
+    color: #333;
+    
+}
+
+/* Base Styles */
+:root {
+    --primary-color: #2c3e50;       /* Navy Blue */
+    --secondary-color: #3498db;     /* Soft Blue */
+    --accent-color: #e74c3c;        /* Coral Red */
+    --background-color: #f8f9fa;    /* Light Gray */
+    --text-color: #2c3e50;
+    --card-bg: #ffffff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Navigation */
+  nav {
+    background: var(--primary-color);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+  }
+   /* Images */
+   img {
+    border-radius: 10px;
+    border: 3px solid var(--secondary-color);
+    margin: 1rem 0;
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    transition: transform 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.03);
+  }
+  
+
+/* Main Container */
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #d32f2f; /* Red */
+}
+
+h2 {
+    color: #007acc; /* Light Blue */
+}
+
+ /* Section Headers */
+ h1, h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+  }
+
+/* Child and Wife Cards */
+.children-list, .wives-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.child-card, .wife-card {
+    background: #ffffff;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.child-card:hover, .wife-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.child-card h2, .wife-card h2 {
+    margin-bottom: 10px;
+    color: #d32f2f; /* Red */
+}
+ /* Grandchildren Page Specific */
+ .grandchildren-list .child-card {
+    background: #fff9f0; /* Warm background for grandchildren */
+  }
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .children-list, .wives-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Tribute Form Styles */
+.tribute-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+}
+
+.submit-btn {
+    background: var(--secondary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: var(--primary-color);
+}
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: none;
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: none;
+}
